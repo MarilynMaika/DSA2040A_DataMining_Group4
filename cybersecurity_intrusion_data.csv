@@ -1,4 +1,4 @@
-session_id,network_packet_size,protocol_type,login_attempts,session_duration,encryption_used,ip_reputation_score,failed_logins,browser_type,unusual_time_access,attack_detected
+usession_id,network_packet_size,protocol_type,login_attempts,session_duration,encryption_used,ip_reputation_score,failed_logins,browser_type,unusual_time_access,attack_detected
 SID_00001,599,TCP,4,492.9832634426563,DES,0.606818080396889,1,Edge,0,1
 SID_00002,472,TCP,3,1557.9964611204384,DES,0.30156896759608937,0,Firefox,0,0
 SID_00003,629,TCP,3,75.04426166420741,DES,0.7391643279163831,2,Chrome,0,1
