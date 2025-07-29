@@ -116,7 +116,7 @@ All data mining steps are in [3_data_mining.ipynb](3_data_mining.ipynb):
 - Hetal_207
 - Chad_884
 - Marilyn
-
+- Rita
 ---
 
 For more details, see the individual notebooks and
