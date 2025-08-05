@@ -119,4 +119,7 @@ All data mining steps are in [3_data_mining.ipynb](3_data_mining.ipynb):
 - Rita
 ---
 
-For more details, see the individual notebooks and
+For more details, see the individual notebooks.
+
+
+
