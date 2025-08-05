@@ -2,6 +2,14 @@
 
 # Cybersecurity Intrusion Data Mining Project
 
+## Contributors
+
+Hetal - ETL
+Chad – Analyst
+Marilyn – Data Mining
+Rita – Initial extract, dashboard & documenter
+
+
 ## Overview
 
 This project analyzes cybersecurity intrusion data using both supervised and unsupervised machine learning techniques, as well as association rule mining. The workflow covers data extraction, transformation, exploratory data analysis, modeling, clustering, and association rule mining to uncover patterns and insights related to network attacks.
@@ -9,18 +17,24 @@ This project analyzes cybersecurity intrusion data using both supervised and uns
 ## Project Structure
 
 ```
-1_extract_transform.ipynb         # Data extraction, cleaning, and transformation
-2_exploratory_data_analysis.ipynb # Exploratory data analysis (EDA)
-3_data_mining.ipynb               # Data mining: modeling, clustering, association rules
-cybersecurity_intrusion_data.csv  # Raw data file
-README.md                         # Project documentation
-data/
-    processed/
-        eda_processed_cybersecurity_data.csv
-    raw/
-        cybersecurity_intrusion_data.csv
-    transformed/
-        transformed_cybersecurity_intrusion_data.csv
+
+├── data/ 
+│   ├── raw/ 
+│   │   └── cybersecurity_intrusion_data.csv
+│   ├── transformed/ 
+│   │   └── transformed_cybersecurity_intrusion_data.csv
+│   └── processed/ 
+│       └── eda_processed_cybersecurity_data.csv
+├── notebooks/ 
+│   ├── 1_extract_transform.ipynb         # Data extraction, cleaning, and transformation
+│   ├── 2_exploratory_data_analysis.ipynb # Exploratory data analysis (EDA)
+│   ├── 3_data_mining.ipynb               # Modeling, clustering, association rule mining
+│   └── 4_insights_dashboard.ipynb        # Dashboard planning and design
+├── report/ 
+│   ├── executive_summary.pdf 
+│   └── presentation.pptx 
+└── README.md
+
 ```
 
 ## Data Description
@@ -90,6 +104,37 @@ All data mining steps are in [3_data_mining.ipynb](3_data_mining.ipynb):
 - Generates association rules (using `mlxtend`).
 - **Key Insight:** Sessions with attacks have a high likelihood (87% confidence) of at least one failed login.
 
+### 4. Dashboard
+The Power BI dashboard analyzes cybersecurity session data to support intrusion detection and risk assessment. It is organized into two pages:
+
+#### Page 1: Risk & Threat Analytics
+Focuses on identifying suspicious sessions and highlighting threat patterns.
+
+<img src="screenshots/dashboard1.png" width="500">
+
+##### Key Visuals:
+ - Attack vs. Non-Attack Sessions (Donut chart) - Shows the overall distribution of attack-labeled vs safe sessions.
+ - Top 20 Risky Sessions (Table) - Lists sessions with the most critical risk factors (e.g., failed logins, low IP reputation).
+ - Failed Logins by Browser (Stacked bar chart) - Identifies browsers frequently used in failed login attempts.
+ - Top 10 Longest Sessions (Clustered column chart) - Highlights potentially stealthy or persistent session activity.
+ - KPI Cards: Summarize average attack rate, failed login attempts and IP reputation scores.
+
+
+#### Page 2: Cybersecurity Session Overview
+Provides broader trends across protocols, encryption and session behaviors.
+ 
+<img src="screenshots/dashboard2.png" width="500">
+
+##### Key Visuals:
+ - 	Sessions by Encryption Type (Stacked column chart) - Displays counts of sessions using AES, DES or no encryption.
+ - Unusual Time Access (Pie chart) - Shows the proportion of sessions occurring at non-standard hours.
+ - Protocol Type Distribution (Donut chart) - Compares session counts by protocol (TCP, UDP, ICMP).
+ - 	Browser vs. Attack (Stacked bar chart) - Relates browser usage to attack frequency.
+ - Top 10 Sessions by Network Packet Size (Table) - Displays the largest data sessions with browser and protocol details.
+ - KPI Cards - Show total sessions, number of attack sessions and average session duration.
+ - Filters & Interactivity: Includes a slicer to filter by protocol type for deeper drill-down.
+
+
 ## How to Run
 
 1. **Install dependencies:**
@@ -110,14 +155,6 @@ All data mining steps are in [3_data_mining.ipynb](3_data_mining.ipynb):
 - **Random Forest** is the best model for attack detection (accuracy: 0.89, perfect precision for attacks).
 - **Failed logins** are highly predictive of attacks (87% confidence in association rules).
 - **Cluster analysis** reveals groups with higher login attempts are more likely to be associated with attacks.
-
-## Contributors
-
-- Hetal_207
-- Chad_884
-- Marilyn
-- Rita
----
 
 For more details, see the individual notebooks.
 
