@@ -5,8 +5,11 @@
 ## Contributors
 
 Hetal - ETL
+
 Chad – Analyst
+
 Marilyn – Data Mining
+
 Rita – Initial extract, dashboard & documenter
 
 
@@ -59,9 +62,14 @@ The dataset contains network session records with the following columns:
 
 - Performed in [1_extract_transform.ipynb](1_extract_transform.ipynb).
 - Loads raw data, checks for missing values and duplicates, and applies necessary cleaning:
+<img src="screenshots/extract1.png" width="500">
   - Fills missing values in `encryption_used` with `"None"`.
+<img src="screenshots/extract2.png" width="500">
   - Ensures consistent casing for categorical columns.
-  - Removes duplicates (if any).
+<img src="screenshots/extract3.png" width="500">
+  - Removes duplicates (if any) and handles outliers.
+<img src="screenshots/extract4.png" width="500">
+<img src="screenshots/extract5.png" width="500">
   - Saves the cleaned data to `data/transformed/transformed_cybersecurity_intrusion_data.csv`.
 
 ### 2. Exploratory Data Analysis (EDA)
