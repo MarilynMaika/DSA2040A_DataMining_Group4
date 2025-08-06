@@ -126,7 +126,7 @@ The Power BI dashboard analyzes cybersecurity session data to support intrusion 
 #### Page 1: Risk & Threat Analytics
 Focuses on identifying suspicious sessions and highlighting threat patterns.
 
-<img src="screenshots/dashboard1.png" width="500">
+<img src="screenshots/dashboard1.png" width="800">
 
 ##### Key Visuals:
  - Attack vs. Non-Attack Sessions (Donut chart) - Shows the overall distribution of attack-labeled vs safe sessions.
@@ -139,7 +139,7 @@ Focuses on identifying suspicious sessions and highlighting threat patterns.
 #### Page 2: Cybersecurity Session Overview
 Provides broader trends across protocols, encryption and session behaviors.
  
-<img src="screenshots/dashboard2.png" width="500">
+<img src="screenshots/dashboard2.png" width="800">
 
 ##### Key Visuals:
  - 	Sessions by Encryption Type (Stacked column chart) - Displays counts of sessions using AES, DES or no encryption.
