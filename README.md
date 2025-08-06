@@ -62,20 +62,28 @@ The dataset contains network session records with the following columns:
 
 - Performed in [1_extract_transform.ipynb](1_extract_transform.ipynb).
 - Loads raw data, checks for missing values and duplicates, and applies necessary cleaning:
-<img src="screenshots/extract1.png" width="500">
-  - Fills missing values in `encryption_used` with `"None"`.
-<img src="screenshots/extract2.png" width="500">
-  - Ensures consistent casing for categorical columns.
-<img src="screenshots/extract3.png" width="500">
-  - Removes duplicates (if any) and handles outliers.
-<img src="screenshots/extract4.png" width="500">
-<img src="screenshots/extract5.png" width="500">
-  - Saves the cleaned data to `data/transformed/transformed_cybersecurity_intrusion_data.csv`.
+<img src="screenshots/extract1.png" width="800">
+
+   - Fills missing values in `encryption_used` with `"None"`.
+<img src="screenshots/extract2.png" width="800">
+
+   - Ensures consistent casing for categorical columns.
+<img src="screenshots/extract3.png" width="800">
+
+   - Removes duplicates (if any) and handles outliers.
+<img src="screenshots/extract4.png" width="800">
+<img src="screenshots/extract5.png" width="800">
+
+   - Saves the cleaned data to `data/transformed/transformed_cybersecurity_intrusion_data.csv`.
 
 ### 2. Exploratory Data Analysis (EDA)
 
 - Conducted in [2_exploratory_data_analysis.ipynb](2_exploratory_data_analysis.ipynb).
 - Visualizes distributions, checks for outliers, and summarizes key statistics.
+<img src="screenshots/analysis1.png" width="800">
+<img src="screenshots/analysis2.png" width="800">
+<img src="screenshots/analysis3.png" width="800">
+<img src="screenshots/analysis4.png" width="800">
 
 ### 3. Data Mining
 
