@@ -96,19 +96,30 @@ All data mining steps are in [3_data_mining.ipynb](3_data_mining.ipynb):
 - Encodes categorical variables using `LabelEncoder`.
 - Scales numerical features with `StandardScaler`.
 - Splits data into features (`X`) and target (`y`).
+- 
+
+
 
 #### b. Supervised Learning
 
 - **Models Used:** Logistic Regression, Decision Tree, Random Forest.
 - **Evaluation:** Accuracy, precision, recall, F1-score, and confusion matrices.
 - **Best Model:** Random Forest (highest accuracy and F1-score for attack detection).
+<img src="screenshots\confusion_matrix_decision_treee.png" width="800">
+<img src="screenshots\confusion_matrix_linear_regression.png" width="800">
+<img src="screenshots\confusion_matrix_random_forest.png" width="800">
+<img src="screenshots\model_comparison.png" width="800">
+
 
 #### c. Unsupervised Learning
 
 - **KMeans Clustering:**
   - Uses the elbow method to determine optimal clusters (k=4).
+  <img src="screenshots\elbow_method.png" width="800">
   - Visualizes clusters using PCA.
   - Analyzes cluster characteristics and their relation to attacks.
+
+
 - **DBSCAN:**
   - Detects clusters and noise (outliers).
   - Compares DBSCAN clusters with attack labels.
@@ -118,7 +129,13 @@ All data mining steps are in [3_data_mining.ipynb](3_data_mining.ipynb):
 - Prepares data by binarizing and one-hot encoding relevant features.
 - Applies the Apriori algorithm to find frequent itemsets.
 - Generates association rules (using `mlxtend`).
+<img src="screenshots\association rule.png" width="800">
+
+
 - **Key Insight:** Sessions with attacks have a high likelihood (87% confidence) of at least one failed login.
+
+
+
 
 ### 4. Dashboard
 The Power BI dashboard analyzes cybersecurity session data to support intrusion detection and risk assessment. It is organized into two pages:
