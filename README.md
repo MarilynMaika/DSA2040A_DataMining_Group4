@@ -17,6 +17,10 @@ Rita – Initial extract, dashboard & documenter
 
 This project analyzes cybersecurity intrusion data using both supervised and unsupervised machine learning techniques, as well as association rule mining. The workflow covers data extraction, transformation, exploratory data analysis, modeling, clustering, and association rule mining to uncover patterns and insights related to network attacks.
 
+The project helps identify suspicious activities and vulnerabilities before attackers exploit them — protecting sensitive business or customer data.
+
+For example: Detecting abnormal login patterns or unusual network traffic could prevent a potential ransomware attack.
+
 ## Project Structure
 
 ```
@@ -96,7 +100,7 @@ All data mining steps are in [3_data_mining.ipynb](3_data_mining.ipynb):
 - Encodes categorical variables using `LabelEncoder`.
 - Scales numerical features with `StandardScaler`.
 - Splits data into features (`X`) and target (`y`).
-- 
+
 
 
 
